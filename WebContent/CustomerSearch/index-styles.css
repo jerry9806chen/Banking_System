@@ -1,0 +1,59 @@
+.site-title{
+	background-color: black;
+	color: yellow;
+	margin-bottom: 0px !important;
+	font-weight: 300;
+	padding: 0 1rem;
+	padding-top:1rem;
+	font-family: Arial;
+}
+
+#title2{
+	color: white;
+}
+
+.navMenuBar {
+	background-color: black;
+	color: white;
+	padding-bottom: 0 !important;
+}
+
+.navbar-brand {
+	white-space: none !important;
+	
+}
+
+#navbarMenuContent {
+	background-color: yellow;
+	min-height: 54px;
+}
+
+.navbar-brand {
+	padding-bottom: 0 !important;
+}
+
+footer {
+	width:100%;
+	background-color: black;
+	padding: 20px;
+	color: white !important;
+}
+
+.footer-widget h3 {
+	color: yellow;
+	margin-bottom: 10px;
+}
+
+.contact-link {
+	display: inline-block;
+	width: 100%;
+	color: #333;
+}
+
+.main-content {
+	margin: 1% 8%;
+}
+
+.featurette-divider {
+	margin: 3rem 0;
+}

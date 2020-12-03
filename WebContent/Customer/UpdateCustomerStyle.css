@@ -1,0 +1,49 @@
+@charset "ISO-8859-1";
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.update-customer-table {
+	display: flex;
+	flex-direction: column;
+	font-family: Arial;
+}
+
+table {
+	border-collapse: separate;
+	border-spacing: 0 20px;
+}
+
+td {
+	width: 15px;
+	text-align: center;
+	border: 0px solid black;
+	padding: 5px;
+}
+
+.btn {
+	background-color: black;
+	color: #FFDB58;
+	border-radius: 3px;
+	padding: 14px 30px;
+	margin: 8px 0px;
+	border: none;
+	cursor: pointer;
+	width: 100%;
+	font-weight: bold;
+}
+
+.row-label {
+	font-weight: bold;
+}
+
+input {
+	width: 100%;
+	padding: 6px 10px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid gray;
+	box-sizing: border-box;
+}}

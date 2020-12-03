@@ -1,0 +1,67 @@
+create table create_customer(
+    customerId     number(20)          not null            unique,
+    ssn_id          number(9)           not null            unique,
+    full_name       varchar2(50)        not null,
+    age             number(3)           not null,
+    address         varchar2(50)        not null,
+    us_city         varchar2(50)        not null,
+    us_state        varchar2(2)        not null,
+    primary key (customerId, ssn_id)
+);
+
+create sequence customerId minvalue 10000 start with 100001 increment by 1;
+
+select * from create_customer;
+
+insert into create_customer values( customerId.NEXTVAL, 987654321, 'full 1', 32, 'aubgiurebg', 'woodbridge', 'NJ');
+
+commit;
+
+CREATE TABLE UserTable(
+    userId     VARCHAR(25) PRIMARY KEY,
+    password    VARCHAR(30),
+    reg_time    TIMESTAMP
+);
+
+insert into usertable values('lok', 'password', current_timestamp);
+
+COMMIT;
+
+
+CREATE TABLE customer_status(
+    customer_id         NUMBER(12),
+    customer_ssn_id     NUMBER(9),
+    status              VARCHAR(12),
+    message             VARCHAR(40),
+    last_updated        TIMESTAMP
+);
+
+INSERT INTO customer_status VALUES(100000625,800000012,'Active','customer update complete',TIMESTAMP '2016-06-24 15:59:51');
+INSERT INTO customer_status VALUES(100000632,800000019,'Active','customer created successfully',TIMESTAMP '2016-06-21 14:27:39');
+INSERT INTO customer_status VALUES(100000266,800000002,'Active','customer reactivation success',TIMESTAMP '2016-06-21 14:27:35');
+INSERT INTO customer_status VALUES(100000265,800000001,'Active','customer update complete',TIMESTAMP '2016-06-21 14:27:35');
+INSERT INTO customer_status VALUES(100000267,800000003,'Active','customer update complete',TIMESTAMP '2016-06-24 15:59:51');
+INSERT INTO customer_status VALUES(100000268,800000004,'Active','customer update complete',TIMESTAMP '2016-06-24 15:59:37');
+INSERT INTO customer_status VALUES(100000626,800000013,'Active','customer update complete',TIMESTAMP '2016-06-21 14:27:38');
+
+COMMIT;
+
+create table account_status(
+customer_id number(12),
+account_id number(12) primary key,
+account_type varchar2(12),
+account_status varchar2(12),
+message varchar2(50),
+last_updated timestamp
+);
+
+insert into account_status
+values(100000267, 111011059, 'Savings', 'Active', 'account creation complete', timestamp '2016-03-31 10:38:30');
+
+insert into account_status
+values(100000266, 111011150, 'Current', 'Active', 'customer already has account of specified type', timestamp '2016-07-12 16:30:55');
+
+insert into account_status
+values(100000268, 111011060, 'Savings', 'Active', 'customer already has account of specified type', timestamp '2016-07-12 16:30:56');
+
+commit;

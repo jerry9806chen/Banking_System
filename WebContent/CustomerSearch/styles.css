@@ -1,0 +1,18 @@
+
+.customerSearchForm {
+	width: 100%;
+	max-width: 400px;
+	display: inline-block;
+}
+
+.searchTable {
+	text-align: left;
+}
+
+#customerSearchButton {
+	min-width: 100px;
+}
+
+.superScript {
+	color: red;
+}

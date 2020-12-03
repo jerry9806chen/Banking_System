@@ -1,0 +1,49 @@
+.form-signin {
+	display: flex;
+	flex-direction: column;
+	border: 1px solid black;
+	width: 30%;
+	padding-bottom: 30px;
+	font-family: san-serif;
+	background-color: white;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	
+}
+
+.form-signin h1 {
+	padding: 4px 10px 4px 10px;
+	margin: 0;
+	background-color: black;
+	color: #fab306;
+	font-family: arial sans-serif;
+}
+
+.form-signin input {
+	padding: 10px;
+	margin: 10px 50px;
+}
+
+#submit-btn {
+	width: 20%;
+	margin: auto;
+	color: #fab306;
+    background-color: black;
+    border: none;
+    font-weight: bold;
+    font-family: arial sans-serif;
+}
+
+.text-container {
+	display: flex;
+	flex-direction: column;
+	padding: 50px 0px 50px 0px;
+}
+
+body {
+	background-image: linear-gradient(grey, white);
+	height: 100vh;
+	display: block;
+}

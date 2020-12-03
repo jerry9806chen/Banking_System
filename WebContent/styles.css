@@ -1,0 +1,18 @@
+.homePageQuickLinks {
+	list-style-type: none;
+	text-align: center;
+}
+
+.links{
+	padding: 10px;
+	width:100%;
+}
+
+.links a{
+	color: blue;
+	text-decoration: underline;
+}
+
+.quickLinks {
+	margin: 0 10%;
+}

@@ -1,0 +1,157 @@
+@charset "ISO-8859-1";
+
+body {
+	margin: 0;
+	width: 100%;
+	position: absolute;
+	font-family: arial sans-serif !important;
+}
+
+header {
+	background-color: black;
+	margin: 0;
+}
+
+.site-title {
+	background-color: black;
+	color: #fab306;
+	margin: 0px 0px;
+	font-weight: 300;
+	margin-bottom: 20px;
+	margin-left: 145px;
+	padding-top: 10px;
+}
+
+#title2 {
+	color: white;
+}
+
+#home, #logout {
+	color: black;
+	padding: 10px;
+}
+
+.customNavbar {
+	overflow: hidden;
+	front-family: Arial;
+	background-color: #fab306;
+	margin-left: 150px;
+	margin-right: 150px;
+}
+
+.customNavbar a {
+	float: left;
+	font-size: 16px;
+	color: white;
+	text-align: center;
+	padding: 14px 16 px;
+	text-decoration: none;
+}
+
+.customDropDown {
+	float: left;
+	overflow: hidden;
+	margin: 0;
+}
+
+.customDropDown .button {
+	font-size: 16px;
+	border: none;
+	outline: none;
+	color: white;
+	padding: 14px 16px;
+	background-color: inherit;
+	font-family: inherit;
+	margin: 0;
+}
+
+.customNavbar a:hover, .customDropDown:hover .button {
+	background-color: white;
+}
+
+.customDropDown-content {
+	display: none;
+	position: absolute;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	background-color: #f9f9f9;
+	z-index: 1;
+}
+
+.customDropDown-content a {
+	float: none;
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+}
+
+.customDropDown-content a:hover {
+	background-color: #ddd;
+}
+
+.customDropDown:hover .customDropDown-content {
+	display: block;
+}
+
+#customer-management, #account-management, #status-details,
+	#account-operations {
+	border: none;
+	background-color: #fab306;
+	padding: 10px;
+}
+
+#home, .customDropDown {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+#main-title {
+	margin: 0;
+}
+
+ul {
+	list-style-type: none;
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0;
+}
+
+li {
+	padding: 30px;
+}
+
+li a {
+	color: #fab306;
+	text-decoration: none;
+}
+
+footer {
+	width: 100%;
+	background-color: black;
+	padding: 20px;
+	color: white !important;
+}
+
+.footer-widget h3 {
+	color: #fab306;
+	margin-bottom: 10px;
+}
+
+.contact-link {
+	display: inline-block;
+	width: 100%;
+	color: #333;
+}
+
+.mainContent {
+	padding: 2%;
+	background-image: linear-gradient(grey, white);
+	min-height: 350px;
+}
+
+#submit #reset {
+    color: #fab306;
+    background-color: black;
+}
